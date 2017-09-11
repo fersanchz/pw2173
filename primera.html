@@ -1,0 +1,79 @@
+<html>
+<head>
+	<title>T&iacute;tulo de la ventana</title>
+</head>
+<body>
+	Esta parte se ve en el navegador <br>
+	<p>
+		hay un texto aqu&iacute;
+	</p>
+	Aqu&iacute; escribo otra l&iacute;nea
+	<h1>listas:</h1>
+	<ul><!--lista desordenada-->
+		<li>Elemento 1</li>
+		<li>Elemento 2</li>
+		<li>Elemento 3</li>
+		<li>Elemento 4</li>
+	</ul>
+	<ol> <!--lista ordenada-->
+		<li>Elemento 1</li>
+		<li>Elemento 2</li>
+		<li>Elemento 3</li>
+		<li>Elemento 4</li>
+	</ol>
+	<strong>texto en negritas</strong><!--para negritas-->
+	<b>otro texto en negritas</b><!--ya casi no se usa--><br>
+	<font>se fue la etiqueta font</font><!--ya no se usa (olvidar)--><br>
+	<a href="http://itculiacan.edu.mx" target="_blank">P&aacute;gina del Tec</a>
+	<br>
+	regla horizontal
+	<hr>
+	Tablas:
+	<!-- atributo border es para ponerle linea a la tabla y align es para la alineacion -->
+	<table border align=center>	
+		<!-- renglon -->
+		<tr>
+			<!-- columna -->
+			<th>N&uacute;mero</th>
+			<th>Nombre</th>
+			<th>N. Control</th>
+			<th>Promedio</th>
+			<!-- &nbsp; es un espacio en blanco forzado -->
+			<!-- rowspan es para abarcar mas renglones -->
+			<th rowspan=2>Algo</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Mi nombre</td>
+			<!-- colspan es para que abarque mas columnas -->
+			<td colspan=2>12345678</td> 
+		</tr>
+	</table>
+	imagen desde un link<br>
+	<!-- se recomienda mover al ancho, que da el efecto de esquina -->
+	<!-- utilizando un link de la imagen -->
+	<img src="http://imagenpng.com/wp-content/uploads/2017/08/imagenesgraciosas.jpg" width="150"> <br>
+	imagen desde la carpeta <br>
+	<!-- este esta guardado en la misma carpeta -->
+	<img src="cachetes.jpg" width="300">
+
+	<br>Formularios <br>
+	<!-- Action = una pagina que procesa la informacion 
+		method =  como se envia la informacion
+				1) get, Get, GET (no se debe utilizar con contraseñas porque las muestra)
+				2) post, Post, POST(oculta los parametros)
+	-->
+	<form action="paginadementiras.html" method="post" id="formaCaptura">
+			<!-- # indica que se direccione a la misma pagina en action-->
+			<!-- name y id son iguales, se pone una u otra -->
+			<input type="text" name="nombre">
+			<input type="text" name="apellido">
+			<!-- submit dispara al action -->
+			<input type="submit" value="Aceptar">
+			<!-- el boton reset no se le modifica atributos -->
+			<input type="reset">
+	</form>
+	<!-- la etiqueta de animacion marquee ya no se usa -->
+	<marquee>Esto ya no se usa</marquee>
+</body>
+</html>
