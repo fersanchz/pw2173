@@ -1,0 +1,20 @@
+/*
+/*la pagina html debe de estar libre de estilos, aqui deben de ir todos los estilos*/
+/*todo debe estar en orden alfabetico*/
+/*los pseudo elementos llevan @
+/*selectores /*cambian atributos*/
+/*	etiquetas ejemplo; p, html, div
+/*   identificador ejemplo; son los que llevan el atributo "id"/*(el id solo puede llamarse igual una etiqueta), llevan el simbolo #*/
+/*   clases ejemplo; tiene el atributo "class" /*(el clases se puede repetir en las etiquetas que se quiera), las clases llevan un punto (.class)*/
+/*media queries /*diseño adaptativo*/
+
+
+body{
+	background:  blue;
+				/*hay 3 combimanciones mas para dar colores: ;*/
+				/*#000000; exadecimal de rgb para colores, 2 caracteres rojo, 2 caracteres verde, 2 caracteres el azul*/
+				/*rgb(255,0,0); rojo,verde, azul    nota: si los 3 numeros son iguales, siempre es gris, sin contar, el blanco y negro*/
+				/*rgba(34,56,2,1) el canal alfa es la transparencias de 0 a 1*/
+	color: white;
+	width: 1024px;
+}

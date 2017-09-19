@@ -1,20 +1,33 @@
-/*
-/*la pagina html debe de estar libre de estilos, aqui deben de ir todos los estilos*/
-/*todo debe estar en orden alfabetico*/
-/*los pseudo elementos llevan @
-/*selectores /*cambian atributos*/
-/*	etiquetas ejemplo; p, html, div
-/*   identificador ejemplo; son los que llevan el atributo "id"/*(el id solo puede llamarse igual una etiqueta), llevan el simbolo #*/
-/*   clases ejemplo; tiene el atributo "class" /*(el clases se puede repetir en las etiquetas que se quiera), las clases llevan un punto (.class)*/
-/*media queries /*diseño adaptativo*/
-
-
-body{
-	background:  blue;
-				/*hay 3 combimanciones mas para dar colores: ;*/
-				/*#000000; exadecimal de rgb para colores, 2 caracteres rojo, 2 caracteres verde, 2 caracteres el azul*/
-				/*rgb(255,0,0); rojo,verde, azul    nota: si los 3 numeros son iguales, siempre es gris, sin contar, el blanco y negro*/
-				/*rgba(34,56,2,1) el canal alfa es la transparencias de 0 a 1*/
-	color: white;
+body
+{
+	/*atributo: valor;*/
+	border: 1px solid red;
 	width: 1024px;
+
+}
+
+header{
+	text-align: center;
+}
+header img{
+	/*float saca la imagen de la caja para que se ponga donde uno quiera (hace que flote)*/
+	float: right;
+	width: 90px;
+}
+/* el encabezado tiene la ruta de li(dentro de quienes esta)*/
+header nav ul li{
+	/*fondo*/
+	background: blue;
+	/*letras*/
+	color: white;
+	/*redondea el borde de las cajas*/
+	border-radius: 5px;
+	/*dos tipos de margenes*/
+	/*ambos tienen 4 atributos*/
+	/*margin es el espacio que separa una caja a la otra(a los lados, sobre o abajo)*/
+	/*margin: arriba derecha abajo izquierda*/
+	margin: 0px 10px 0px 0px;
+	/*padding son los bordes internos (los espacios internos)*/
+	padding: 5px 8px 5px 8px;
+	display: inline-block;
 }
