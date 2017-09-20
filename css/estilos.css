@@ -2,17 +2,31 @@ body
 {
 	/*atributo: valor;*/
 	border: 1px solid red;
+	margin: 0 auto;
 	width: 1024px;
 
 }
-
+footer{
+	margin-top: 3px;
+	background: blue;
+	color: white;
+	text-align: center;
+}
 header{
+	border: 1px solid blue;
 	text-align: center;
 }
 header img{
 	/*float saca la imagen de la caja para que se ponga donde uno quiera (hace que flote)*/
 	float: right;
 	width: 90px;
+	/*separamos el margen del logo de la derecha*/
+	margin-right: 15px;
+	/*se usa negativos para que suba el margen de arriba*/
+	margin-top: -60px;
+}
+header nav{
+	margin-top: 60px;
 }
 /* el encabezado tiene la ruta de li(dentro de quienes esta)*/
 header nav ul li{
@@ -22,6 +36,9 @@ header nav ul li{
 	color: white;
 	/*redondea el borde de las cajas*/
 	border-radius: 5px;
+	/*es para poner una sombra a la caja, tiene 3 parametros; direcha, abajo y color */
+	box-shadow: -3px -3px rgba(0,0,0,0.2);/* rojo,verde,negro, transparencia*/
+	display: inline-block;
 	/*dos tipos de margenes*/
 	/*ambos tienen 4 atributos*/
 	/*margin es el espacio que separa una caja a la otra(a los lados, sobre o abajo)*/
@@ -29,5 +46,18 @@ header nav ul li{
 	margin: 0px 10px 0px 0px;
 	/*padding son los bordes internos (los espacios internos)*/
 	padding: 5px 8px 5px 8px;
+
+	width: 80px;
+}
+/*hover es el evento de pasar el mouse sobre el*/
+header nav ul li:hover{
+	background: orange;
+	color: black;
+}
+section article{
+	border: 1px solid tomato;
 	display: inline-block;
+	/*alinea arriba*/
+	vertical-align: top;
+	width: 32%;
 }
