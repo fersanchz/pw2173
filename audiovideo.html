@@ -1,0 +1,21 @@
+<!-- html:5 mas tab para poner el html 5 -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Etiqueta audio y video</title>
+</head>
+<body>
+	Etiqueta para audio y video
+	<audio controls>
+		<source src="media/audio/musica.mp3">
+	</audio>
+	<!-- el preload es para que se empiece a descargar sin darle play, sin el se descargara hasta que de play -->
+	<!-- poster es para que carge una imagen si no carga el video -->
+	<!-- loop para que se repita -->
+	<video controls autoplay preload="auto" loop poster="media/img/estrella.png">
+		<source src="media/video/html5.mp4">
+		<source src="media/video/html5.webm">
+	</video>
+</body>
+</html>
