@@ -1,6 +1,46 @@
 body{
-	border: 1px solid blue;
+	border: 1px solid blue; /*borde a la caja para ver el tamaño*/
 	font-size:  16px; /*1em=el tamaño de una letra M*/
-	margin-top: 0 auto;
-	max-width: 1024px;
+	margin-top: 0 auto; /*centramos la caja*/
+	max-width: 1024px; /*se le da ancho a la caja*/
+}
+form{
+	float: right;
+	margin-right: 15px;
+	margin-top: -35px;
+}
+form input{ /*son todos los input en el form*/
+	border-radius: 5px;
+}
+form input[type="button"]{ /*para los tipos boton del form*/
+	background: green;
+	color: white;
+}
+header{
+	background: #B3D8EB; /* se tomo el color de la pagina http://imgr.co/, cargando la imagen */
+}
+header nav{
+	background: #0E6CB0;
+	border-radius: 5px; /*redondea las esquinas*/
+	margin: 0 auto; /*centra*/
+	padding: 2px 0px 2px 0px; /*arriba derecha abajo izquierda*/
+	width:  99%;
+}
+header nav ul li{
+	color: white; /*color de letra blanco*/
+	display: inline-block; /*para poner uno a lado del otro*/
+	margin-right: 20px;
+}
+#seccion01 article{ /*seccion01 es un id*/
+	text-align: center; /*centra todo el contenido del article*/
+}
+
+#seccion01 article img{
+	border: 5px solid rgba(150,150,150,0.5); /* se uso el rgba para dar transparencia*/
+	margin-top: 15px;
+	width: 98%; /*hace que la imagen se ponga casi al tamaño completo*/
+}
+#logo/*esto es un id*/
+{
+	margin-top: -150px;
 }
