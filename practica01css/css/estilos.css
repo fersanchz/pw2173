@@ -40,7 +40,28 @@ header nav ul li{
 	margin-top: 15px;
 	width: 98%; /*hace que la imagen se ponga casi al tamaño completo*/
 }
+#seccion02 article{
+	display: inline-block;
+	vertical-align: top;
+	width: 32.8%;
+}
+#seccion02 article input[type="submit"]{
+	background: white;
+	border-radius: 5px;
+	color: blue;
+	margin-left: 130px;
+}
 #logo/*esto es un id*/
 {
 	margin-top: -150px;
+}
+/*todas las clases inician con punto*/
+.otraSeccion{
+	font-size: 2.5em;
+}
+.unaSeccion{
+	font-size: 4.5em;
+}
+.unaSeccion,.otraSeccion{ /*se comparten los atributos a ambas clases con la coma*/
+	font-weight: bold; /*negritas*/
 }
