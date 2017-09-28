@@ -1,7 +1,7 @@
 body{
 	border: 1px solid blue; /*borde a la caja para ver el tamaño*/
 	font-size:  16px; /*1em=el tamaño de una letra M*/
-	margin-top: 0 auto; /*centramos la caja*/
+	margin: 0 auto; /*centramos la caja*/
 	max-width: 1024px; /*se le da ancho a la caja*/
 }
 form{
