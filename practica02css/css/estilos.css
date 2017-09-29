@@ -1,0 +1,23 @@
+body{
+	font-size: 16px; /*1em*/
+	margin: 0 auto; /*centramos body, margin 0 quita los margenes de arriba y de abajo*/
+	max-width: 1078px; /*requerimiento del cliente*/
+	
+}
+header input{
+	float: right;
+	margin-right: -200px;
+	position: relative;
+	margin-top: 15px;
+}
+#granthams{
+	margin-top: 20px;
+	margin-left: 25px;
+}
+#paint{
+	float: right;
+}
+
+
+
+
