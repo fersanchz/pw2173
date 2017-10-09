@@ -1,0 +1,11 @@
+/*directiva*/
+@font-face 
+{
+	font-family: Slabo_27px;
+	src: url("Slabo_27px/Slabo27px-Regular.ttf");
+}
+h1
+{
+	/*font-family: 'Josefin Sans', sans-serif;*/
+	font-family: Slabo_27px;
+}
