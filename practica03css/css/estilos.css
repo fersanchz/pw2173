@@ -1,0 +1,15 @@
+body{
+	font-size: 16px; /*1em*/
+	margin: 0 auto; /*centramos body, margin 0 quita los margenes de arriba y de abajo*/
+	max-width: 1078px; /*requerimiento del cliente*/
+	min-width: 1078px; /*es el minimo que estara la pagina*/
+}
+header nav{
+
+	background: orange;
+}
+header nav ul li{
+	color: white; /*o gray para color gris*/
+	display: inline-block;
+	padding: 10px 24px 10px 0px;
+}
