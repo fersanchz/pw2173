@@ -1,0 +1,64 @@
+article{
+	border-radius: 5px;
+	/*border: 1px solid blue;*/
+	height: 50px;
+	margin-top: 10px;
+	width: 150px;
+}
+#uno{
+	background: red;
+	/*Nota: como se toma todo como una sola instruccion tienes que hacer cualquier cambio a todas*/
+	/*Nota: -prefix-free es una biblioteca para no usar prefijos*/
+	/*el prefijo -o- es para navegador opera*/
+	background: -o-linear-gradient(rgba(150,0,0,0),rgba(255,255,0,1));
+	/*-webkit- es para safari*/
+	background: -webkit-linear-gradient(rgba(150,0,0,0),r255,255,150,0,1));
+	/*-moz- es para firefoz*/
+	background: -moz-linear-gradient(rgba(150,0,0,0),rgba(255,255,0,1));
+	/*sin nada es para todos*/
+	background: linear-gradient(rgba(150,0,0,0),rgba(255,255,0,1)); /*no es un valor standar(puede que en un navegador no funcione),para hacer color de degradado*/
+}
+#dos{
+	background: red;
+	/*el prefijo -o- es para navegador opera*/
+	background: -o-linear-gradient(to left,red,yellow);
+	/*-webkit- es para safari*/
+	background: -webkit-linear-gradient(to left,red,yellow);
+	/*-moz- es para firefoz*/
+	background: -moz-linear-gradient(to left,red,yellow);
+	/*sin nada es para todos*/
+	background: linear-gradient(to left,red,yellow); /*no es un valor standar(puede que en un navegador no funcione),para hacer color de degradado*/
+}
+#tres{
+	background: red;
+	/*el prefijo -o- es para navegador opera*/
+	background: -o-linear-gradient(to right,red,yellow);
+	/*-webkit- es para safari*/
+	background: -webkit-linear-gradient(to right,red,yellow);
+	/*-moz- es para firefoz*/
+	background: -moz-linear-gradient(to right,red,yellow);
+	/*sin nada es para todos*/
+	background: linear-gradient(to right,red,yellow); /*no es un valor standar(puede que en un navegador no funcione),para hacer color de degradado*/
+}
+#cuatro{
+	background: red;
+	/*el prefijo -o- es para navegador opera*/
+	background: -o-linear-gradient(to right bottom,red,yellow);
+	/*-webkit- es para safari*/
+	background: -webkit-linear-gradient(to right bottom,red,yellow);
+	/*-moz- es para firefoz*/
+	background: -moz-linear-gradient(to right bottom,red,yellow);
+	/*sin nada es para todos*/
+	background: linear-gradient(to right bottom,red,yellow); /*no es un valor standar(puede que en un navegador no funcione),para hacer color de degradado*/
+}
+#cinco{
+	background: red;
+	/*el prefijo -o- es para navegador opera*/
+	background: -o-linear-gradient(to left bottom,red,yellow);
+	/*-webkit- es para safari*/
+	background: -webkit-linear-gradient(to left bottom,red,yellow);
+	/*-moz- es para firefoz*/
+	background: -moz-linear-gradient(to left bottom,red,yellow);
+	/*sin nada es para todos*/
+	background: linear-gradient(to left bottom,red,yellow); /*no es un valor standar(puede que en un navegador no funcione),para hacer color de degradado*/
+}
