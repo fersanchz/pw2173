@@ -1,0 +1,56 @@
+/*imagen con atributi alt*/
+img[alt] {/*con los corchetes se selecciona un atributo(ejem alt)*/
+	border: 5px solid blue;
+}
+/*imagen con atributo SRC cadena exacta*/
+img[src="img/alerta.png"]{
+	width: 400px;
+}
+/*^ se le llama circunflejo*/
+/*Imagen con atributo SRC con el inicio de la cadena*/
+img[src^="im"]{ /*funciona para los que inicien con lo que este despues de ^=*/
+	width: 150px;
+}
+/*Imagen con el atributo SRC al final de la cadena*/
+img[src$="png"]{ /*funciona para las imagenes que tengan al final de la ruta png*/
+	width: 250px;
+}
+/*Imagen con el atributo SRC en cualquier parte de la cadena*/
+img[src*="al"]{ /*funciona para la ruta que contenga las letras que se pongan*/
+	width: 1000px;
+}
+
+article[class~="resaltado"]{ 
+	/*con la tilde obliga al articlo a buscar en todas las clases 
+	que contenga(separadas por espacio)*/
+	border: 1px dashed blue; 
+}
+article[class~="archivo"]{ 
+	/*con la tilde obliga al articlo a buscar en todas las clases 
+	que contenga(separadas por espacio)*/
+	border: 1px dashed red; 
+}
+article[class~="ingles"]{ 
+	/*con la tilde obliga al articlo a buscar en todas las clases 
+	que contenga(separadas por espacio)*/
+	border: 1px dashed green; 
+}
+article[class|=ingles]{ 
+	/*la barrita sirve para buscar en una lista de valores separados por guiones, 
+	pero solo si el valor mas a la izquierda es ingles*/
+	text-align: center;
+}
+/*selector de secundarios para seleccionar solamente el(los) <p> que se encuentran 
+inmediatamente despues del <div>*/
+div > p { /*solo funcionara para los hijos directos <p> de <div>*/
+	color: blue;	
+}
+div p{ /*cambia a todos los p dentr de div*/
+	color: red;
+}
+h2 + p{ /*despues del h2 se pinte verde el primer p*/
+	color: green;
+}
+h2 ~ p{ /*despues del h2 se pinte verde todos los elementos p*/
+	color: grey;
+}
