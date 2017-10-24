@@ -54,3 +54,35 @@ h2 + p{ /*despues del h2 se pinte verde el primer p*/
 h2 ~ p{ /*despues del h2 se pinte verde todos los elementos p*/
 	color: grey;
 }
+/*poner en color rojo casi todo el texto de ka section, menos id=referecias*/
+#resumen,#experimento,#pruebas,#resultados,#conclusiones{
+	color: tomato;
+}
+/*Seleccionar todos menos la que no quiero*/
+section:not(#referencias){
+	color: hotpink;
+}
+/*Seleccionar elementos li pares e impares*/
+li:nth-child(odd){ /*odd es para lis impares*/
+	color: green;
+}
+li:nth-child(even){ /*even es para lis pares*/
+	color: blue;
+}
+li:nth-child(5){ /*es para el quinto elemento*/
+	color: red;
+}
+li:nth-last-child(1){ /*es el elemento 1 del decimo al primero(cuenta de abajo para*/
+	color:yellow;
+}
+/*primer y ultimo elemento*/
+article:first-child{
+	color:green;
+}
+article:last-child{
+	color:yellow;
+}
+/*primera linea de un parrafo*/
+p:first-line{
+	font-weight: bold;
+}
