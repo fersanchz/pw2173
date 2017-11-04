@@ -1,0 +1,39 @@
+body{
+	border: 1px solid red;
+	margin: 0 auto;
+	width: 1024px;
+	color: grey;
+}
+img[src="img/menu.png"]{
+	width: 90%;
+}
+img[src^="img/news"]{
+	width: 300px;
+}
+header{
+	display: inline-block;
+}
+section{
+
+	background: black;
+}
+section article{
+
+	display: inline-block;
+	vertical-align: top;
+	width: 32%;
+}
+.rojo{
+	background: red;
+	color: white;
+}
+.gris{
+	background: grey;
+}
+.verde{
+	background: green;
+	color: white;
+}
+.blanco{
+	background: white;
+}
