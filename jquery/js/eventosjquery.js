@@ -13,7 +13,12 @@ var inicia= function(){
 			    				  data.results[0].name.first+" "+
 			    				  data.results[0].name.last+"<h1>")//.html sirve para incrustar testo o codigo dentro del html. con .append se agrega el texto al final
 			    $("#foto").attr("src",data.results[0].picture.large);//con .attr cambias el contenido del atributo
-			    $("#direccion").html("Direccion: "+data.results[0].location.city)
+			    $("#calle").html("Calle: "+data.results[0].location.street)
+			    $("#ciudad").html("Ciudad: "+data.results[0].location.city)
+			    $("#estado").html("Estado: "+data.results[0].location.state)
+			    $("#email").html("E-mail: "+data.results[0].email)
+			    $("#telefono").html("Telefono: "+data.results[0].phone)
+			    $("#usuario").html("Usuario: "+data.results[0].login.username)
 			  }
 		});
 	}
