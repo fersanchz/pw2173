@@ -1,0 +1,11 @@
+form input{
+	border-radius: 5px;
+	font-size: 1.7em;
+}
+form input[type="text"]{
+	text-align: right;
+}
+form input[type="button"]{
+	background: blue;
+	color: white;
+}
