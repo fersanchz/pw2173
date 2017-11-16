@@ -8,4 +8,12 @@ form input[type="text"]{
 form input[type="button"]{
 	background: blue;
 	color: white;
+	width: 70px;
+}
+#btnCientifica{
+	background: orange;
+	border-radius: 5px;
+	color: black;
+	height: 50px;
+	width: 100px;
 }

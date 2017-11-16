@@ -8,13 +8,14 @@ const url=require('url'); //optiene la pagina
 let PantallaPrincipal; //let es una constante que tendra el valor mas adelante, pero cuando lo tenga ya no se podra cambiar
 
 function muestraPantallaPrincipal(){
-	PantallaPrincipal =new BrowserWindow({width:320,height:425}); //los parametros multiples llevan llaves
+	PantallaPrincipal =new BrowserWindow({width:320,height:475}); //los parametros multiples llevan llaves
 
 	PantallaPrincipal.loadURL(url.format({
 		pathname: path.join(__dirname,'index.html'), // join concatena cadenas
 		protocol: 'file', // tipo de archivo
 		slashes: true //si lleva las diagonales normales
 	}))//cargar una pagina en la pantalla
+	PantallaPrincipal.webContents.openDevTools(); // habilita la opcion de depuracion del navegador
 	PantallaPrincipal.show(); //muestra la pantalla
 }
 
