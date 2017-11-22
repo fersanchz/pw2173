@@ -53,13 +53,13 @@ function botonDetalle(){
 	require('electron').remote.getGlobal('infoUsuarios').direccion=usuarios[this.id].direccion;
 	require('electron').remote.getGlobal('infoUsuarios').telefono=usuarios[this.id].telefono;
 
-	PantallaDetalle=new BrowserWindow({width:320,height:475});
+	PantallaDetalle =new BrowserWindow({width:320,height:475});
 	PantallaDetalle.loadURL(url.format({
 		pathname: path.join(__dirname,'detalleusuarios.html'), // join concatena cadenas
 		protocol: 'file', // tipo de archivo
 		slashes: true //si lleva las diagonales normales
 	}));
-	PantallaDetalle.webContents.openDevTools(); 
+	//PantallaDetalle.webContents.openDevTools(); 
 	PantallaDetalle.show();
 }
 
