@@ -5,9 +5,17 @@ const {app,BrowserWindow}=require('electron');  // es la misma instruccion de ar
 const path=require('path'); //optiene la ruta del archivo
 const url=require('url'); //optiene la pagina
 
-
 //ECMASCRIPT = 6
 let PantallaPrincipal; //let es una constante que tendra el valor mas adelante, pero cuando lo tenga ya no se podra cambiar
+
+//Objeto global para compartir datos entre pantallas
+global.infoUsuarios={
+	nombre: '',
+	genero: '',
+	foto: '',
+	direccion: '',
+	telefono: ''
+}
 
 function muestraPantallaPrincipal(){
 	PantallaPrincipal =new BrowserWindow({width:320,height:475}); //los parametros multiples llevan llaves
@@ -17,7 +25,7 @@ function muestraPantallaPrincipal(){
 		protocol: 'file', // tipo de archivo
 		slashes: true //si lleva las diagonales normales
 	}))//cargar una pagina en la pantalla
-	PantallaPrincipal.webContents.openDevTools(); // habilita la opcion de depuracion del navegador
+	//PantallaPrincipal.webContents.openDevTools(); // habilita la opcion de depuracion del navegador
 	PantallaPrincipal.show(); //muestra la pantalla
 }
 
