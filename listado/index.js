@@ -59,7 +59,7 @@ function botonDetalle(){
 		protocol: 'file', // tipo de archivo
 		slashes: true //si lleva las diagonales normales
 	}));
-	//PantallaDetalle.webContents.openDevTools(); 
+	PantallaDetalle.webContents.openDevTools(); 
 	PantallaDetalle.show();
 }
 
