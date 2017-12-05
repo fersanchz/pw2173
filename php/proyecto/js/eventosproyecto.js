@@ -1,4 +1,4 @@
-var inicia = frunction(){
+var inicia = function(){
 	var entrada = function(){
 		var usuario=$("#txtUsuario").val();
 		var clave=$("#txtClave").val();
@@ -7,17 +7,24 @@ var inicia = frunction(){
 						"&clave="+clave+
 						"&id="+Math.random();
 		$.ajax({
-			url:"localhost/pw/php/entrada.php",
-			datatype: 'json',
+			url: "php/entrada.php",
+			datatype: 'json', //retorno
+			type: "POST", //lo que enviamos
+			data: parametros,
 			success: function(data){
-
+				if(data.respuesta==true){ //es igual a poner data.respuesta==true
+					//alert("Bienvenido"+data.nombre);
+					$("main").load("menu.html");
+				}else{
+					alert("Usuario y/o clave incorrectos");
+				}
 			},
 			error: function(a,b,c){
-
+				alert("No se pudo conectar al server");
 			}
 
 		})
 	}
-	$("#btnEntrar").on("click",entrada)
+	$("#btnEntrar").on("click",entrada);
 }
 $(document).ready(inicia);
