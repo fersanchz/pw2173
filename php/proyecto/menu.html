@@ -3,11 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Menú</title>
+	<link rel="stylesheet" href="ccs/menu.css">
+	<script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="js/eventosproyecto.js"></script>
+  <script src="js/menu.js"></script>
 </head>
 <body>
 	<button id="btnAlta">Alta</button>
 	<button id="btnBaja">Baja</button>
 	<button id="btnCambio">Cambio</button>
 	<button id="btnConsulta">Consulta</button>
+	<article id="altas">
+		<input type="text" id="txtNcontrol" parceholder="Número de control">
+		<input type="text" id="txtNombre" parceholder="Nombre completo">
+		<input type="text" id="txtCarrera" parceholder="Clave de carrera">
+		<input type="password" id="txtClave" parceholder="Contraseña">
+		<button id="btnAltaAlumno">Guardar</button>
+	</article>
 </body>
 </html>
