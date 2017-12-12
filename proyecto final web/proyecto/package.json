@@ -1,0 +1,24 @@
+{
+  "name": "lista",
+  "version": "1.0.0",
+  "description": "lista de alumnos",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lista",
+    "alumnos",
+    "maestros"
+  ],
+  "author": "Sanchez Arreola Luis Fernando",
+  "license": "ISC",
+  "devDependencies": {
+    "asar": "^0.14.0",
+    "electron": "^1.7.9",
+    "electron-packager": "^10.1.0",
+    "electron-require": "^0.3.0",
+    "jquery": "^3.2.1"
+  }
+}
